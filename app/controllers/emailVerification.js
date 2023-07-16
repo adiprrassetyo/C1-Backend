@@ -34,7 +34,7 @@ module.exports = {
       secure: true,
       service: "gmail",
       auth: {
-        user: "adiprstyo10@gmail.com",
+        user: "adiprstyo11@gmail.com",
         pass: "dxwkyepkhnbzfxrk",
       },
     });
