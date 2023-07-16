@@ -6,7 +6,7 @@
     "description": "API Authentikasi & User",
     "contact": {}
   },
-  "host": "binair-backend-production.up.railway.app",
+  "host": "c1-backend-production.up.railway.app",
   "basePath": "/api/v1",
   "securityDefinitions": {},
   "schemes": ["https"],
