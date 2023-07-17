@@ -15,7 +15,7 @@
   "paths": {
     "/register": {
       "post": {
-        "description": "Member Register Seperti Biasa, role akan auto member, dan juga profile_picture default avatar",
+        "description": "Member Register Seperti Biasa, role akan auto member, juga profile_picture default avatar dan akan dikirimkan email untuk verify",
         "summary": "Register",
         "tags": ["Authentication"],
         "operationId": "Register",
@@ -141,7 +141,7 @@
     },
     "/login": {
       "post": {
-        "description": "StartFragment\n\nAdmin / Member dapat melakukan login sesuai email dan password yang sudah di inputkan,  \nmaka akan menerima accessToken yang dapat disimpan di local.storage",
+        "description": "StartFragment\n\nAdmin / Member dapat melakukan login sesuai email dan password yang sudah di inputkan,  \nmaka akan menerima accessToken yang dapat disimpan di local.storage. wajib verify untuk bisa login",
         "summary": "Login",
         "tags": ["Authentication"],
         "operationId": "Login",
