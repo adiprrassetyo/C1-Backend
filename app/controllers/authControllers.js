@@ -16,7 +16,7 @@ const moment = require("moment-timezone");
 const SALT = 10;
 const { OAuth2Client } = require("google-auth-library");
 const client = new OAuth2Client(
-  "214017739948-b18qptodbi5i0sth8fgukauks2raoi61.apps.googleusercontent.com"
+  "312500654326-tcpgcj2g5v9ah5ervgj8g90bkqhi9iub.apps.googleusercontent.com"
 );
 const notifControllers = require("./notificationsControllers");
 const notifService = require("../services/notifService");
@@ -419,7 +419,7 @@ exports.googleLogin = async (req, res) => {
     const ticket = await client.verifyIdToken({
       idToken: token,
       audience:
-        "214017739948-b18qptodbi5i0sth8fgukauks2raoi61.apps.googleusercontent.com",
+        "312500654326-tcpgcj2g5v9ah5ervgj8g90bkqhi9iub.apps.googleusercontent.com",
     });
     const { given_name, family_name, email, picture } = ticket.getPayload();
     let user = await getUserByEmail(email);
