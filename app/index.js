@@ -10,7 +10,7 @@ const path = require("path");
 /** Install JSON request parser */
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors("https://binair-frontend.up.railway.app"));
 app.use(morgan("dev"));
 app.use(cookieParser());
 
